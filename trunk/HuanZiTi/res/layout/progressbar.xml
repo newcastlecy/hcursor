@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"	
+	android:layout_width="fill_parent"
+	android:padding="20dip"
+	android:layout_height="fill_parent">
+    
+<TextView 
+			android:id="@+id/text" 
+			android:text="全部下载完成" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_marginBottom="20dip"
+			android:textSize="7pt"
+			android:gravity="center_horizontal">
+ </TextView>
+ 
+<TextView android:id="@+id/progress"
+		  android:layout_width="fill_parent" 		
+		  android:layout_height="wrap_content" 
+		  android:visibility="gone"
+		  android:text="progress"/>
+
+<ProgressBar android:id="@+id/downloadProgress"
+			 android:layout_width="fill_parent" 
+			 android:layout_height="wrap_content"
+			 android:max="100"
+			 android:visibility="gone"
+			 style="?android:attr/progressBarStyleHorizontal"/>
+			 
+<TextView 
+			android:id="@+id/mp3Name" 
+			android:text="mp3_name" 
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:layout_gravity="right">
+ </TextView>
+
+</LinearLayout>
+
